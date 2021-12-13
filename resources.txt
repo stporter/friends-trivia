@@ -1,0 +1,21 @@
+Increase button size on hover - https://stackoverflow.com/questions/37357402/css-button-animation-getting-bigger
+
+Hiding content on page using css - https://stackoverflow.com/questions/775060/how-to-hide-the-content-of-the-div-in-css
+
+Friends Font - https://fontmeme.com/friends-tv-series-font/
+
+Flexbox - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Hiding and showing elements on page - https://attacomsian.com/blog/javascript-hide-show-elements-using-css-class
+
+forEach help - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+innerText help - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
+
+functions - https://www.w3schools.com/js/js_functions.asp
+
+dataset help - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+
+appendChild help - https://www.w3schools.com/jsref/met_node_appendchild.asp
+
+creating button in JS - https://sebhastian.com/javascript-create-button/
