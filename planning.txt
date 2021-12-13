@@ -1,21 +1,17 @@
 Friends Trivia 
 
 Create a home screen
-    create a "start button" and a "how to play" button 
+    create a "play button" and a "how to play" button 
     create a module attached to the "how to play" button
     write out the instructions of the game 
-    add a friends themed background image to the home screen 
-    add a title to the home screen 
+    add a title and sub-heading to the home screen 
 
 Create a "question" screen 
-    create a submit button 
-    create four question buttons 
+    create four question buttons
+    have the correct answer light up green 
+    have incorrect answers light up red 
+    create a question counter (1 of 10) 
+    create a scoreboard 
+    create a restart button 
+
     
-
-
-
-    <p>Test your knowledge of the popular sitcom TV show Friends with this online trivia game.</p>
-    <p>The rules of the game are simple, to guess as many of the trivia questions correctly as you can.</p>
-    <p>There will be 10 questions to answer and you will have an unlimited amount of time to think on your answer. NO CHEATING!</p>
-    <p>Simply select the answer you wish to choose. The correct answer will flash green and the incorrect answers red regardless of if you have chose the correct answer or not. If you guessed correctly, your score counter will go up by one.</p>
-    <p>The goal of the game is to guess all 10 questions correctly! Now go click "Play" to get started!</p>

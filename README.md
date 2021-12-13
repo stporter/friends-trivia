@@ -47,4 +47,4 @@
 
 ## Hurdles
 
--
+- One of my main hurdles was trying to figure out whether I wanted to have different styles and different links to different pages or to have everything all on one page. I could not quite get everything on one page so I am going to go back and restructure to have multiple html links for the main screen and the game screen. I was having trouble getting the "play" and "how to play" buttons to disappear and have the questions screen pop up. The last issue I am still having is restructuring all of my HTML and CSS because it is not "clean code." A lot of the CSS was put together with just trial and error and trying random things instead of just understanding how everything works and flows together on the page. It still works for the most part but, an issue I was having is when I would move one thing or change the size of an element, something else would move on the page that I did not intend to move. Once I clean the HTML up a bit the CSS should be easier to work through!

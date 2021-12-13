@@ -1,4 +1,4 @@
-// Constants 
+// Constants
 
 const openBtn = document.querySelector('#openModal');
 const modal = document.querySelector('#modal');
@@ -18,42 +18,20 @@ const choiceOne = document.querySelector('#choice-one');
 const choiceTwo = document.querySelector('#choice-two');
 const choiceThree = document.querySelector('#choice-three');
 const choiceFour = document.querySelector('#choice-four');
-const selectAnswer 
-
+const selectAnswer = document.querySelector('#answer-choices');
 
 // Event Listeners
 
 openBtn.addEventListener('click', openModal);
 close.addEventListener('click', closeModal);
-
 playButton.addEventListener('click', playGame);
 
-
-
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-// DELETED LOTS OF CODE AND RESTRUCTURING! 
-
-
-	
-
-
-function playGame () {
-
-}
-
-
+// Functions
+function playGame() {}
 function nextQuestion() {}
-
 function showAnswer() {}
 
-
-// Questions 
+// Questions
 
 const questions = [
 	{
@@ -181,8 +159,7 @@ const questions = [
 	},
 ];
 
-
-// Answers 
+// Answers
 
 const correctAnswer = [
 	'choice3',
