@@ -20,6 +20,13 @@ const choiceThree = document.querySelector('#choice-three');
 const choiceFour = document.querySelector('#choice-four');
 const selectAnswer = document.querySelector('#answer-choices');
 
+// Variables
+
+let score = 0;
+let currentQuestion = 0;
+let questionNumber = 0;
+let allQuestions = [];
+
 // Event Listeners
 
 openBtn.addEventListener('click', openModal);
@@ -27,8 +34,14 @@ close.addEventListener('click', closeModal);
 playButton.addEventListener('click', playGame);
 
 // Functions
-function playGame() {}
-function nextQuestion() {}
+function playGame() => {
+
+}
+function nextQuestion(e) {
+    
+}
+
+
 function showAnswer() {}
 
 // Questions

@@ -15,7 +15,7 @@
 
 ## Installation Instructions
 
-- Please click the following link to play: "link"
+- Please click the following link to play: https://stporter.github.io/friends-trivia/
 
 ## User Stories
 

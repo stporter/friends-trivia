@@ -19,3 +19,5 @@ dataset help - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/data
 appendChild help - https://www.w3schools.com/jsref/met_node_appendchild.asp
 
 creating button in JS - https://sebhastian.com/javascript-create-button/
+
+spread operator [...""] - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
