@@ -34,15 +34,11 @@ close.addEventListener('click', closeModal);
 playButton.addEventListener('click', playGame);
 
 // Functions
-function playGame() => {
-
-}
-function nextQuestion(e) {
-    
-}
-
-
+function playGame() {}
+function nextQuestion(e) {}
 function showAnswer() {}
+function correctAnswer() {}
+function wrongAnswer() {}
 
 // Questions
 
