@@ -6,13 +6,80 @@
 
 body {
 	background-color: wheat;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8%;
 }
 
 h1 {
 	text-align: center;
 }
 
-.answer-buttons,
-.main-buttons {
+.btn {
 	border-radius: 8px;
+	padding: 10px;
+	margin-top: 2%;
+	background-color: yellow;
+	cursor: pointer;
+}
+
+.btn:hover {
+	transition: transform 200ms;
+	transform: scale(1.05);
+}
+
+#answer-button-style {
+	display: grid;
+	gap: 40px;
+}
+
+.container {
+	background-color: lightblue;
+	border-radius: 8px;
+	padding: 50px;
+	width: 1000px;
+	height: 700px;
+}
+
+/* #next-button {
+	padding: 20px;
+	position: relative;
+	width: 50%;
+}
+
+#restart-button {
+	padding: 20px;
+	position: relative;
+	width: 50%;
+	left: 52%;
+} */
+
+#next-button:hover,
+#restart-button:hover {
+	transition: transform 200ms;
+	transform: scale(1.1);
+}
+
+.main-buttons {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	gap: 50%;
+	border-radius: 8px;
+	cursor: pointer;
+	position: relative;
+	top: 60px;
+}
+
+#next-button,
+#restart-button {
+	padding: 20px;
+	border-radius: 8px;
+	background-color: yellow;
 }
