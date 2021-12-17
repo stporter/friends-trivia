@@ -99,6 +99,50 @@ const correctAnswer = [
 	'btn1',
 ];
 
+// function nextQuestion(e) {
+// 	currentQuestion++;
+// 	let nextQuestion;
+// 	nextQuestion = questions[`question${showCurrentQuestion}`];
+
+// 	for (let i = 0; i < answers.length; i++) {
+// 		answers[i];
+// 	}
+// 	askedQuestion.innerText = `${nextQuestion.question}?`;
+// 	buttonOne.innerText = nextQuestion.choices[0];
+// 	buttonTwo.innerText = nextQuestion.choices[1];
+// 	buttonThree.innerText = nextQuestion.choices[2];
+// 	buttonFour.innerText = nextQuestion.choices[3];
+// }
+
+function showCurrentQuestion() {
+	askedQuestion.innerHTML = `<h1>${questionText}</h1>`;
+}
+
+function answerText(choiceOne, choiceTwo, choiceThree, choiceFour) {
+	buttonOne.innerText = choiceOne;
+	buttonTwo.innerText = choiceTwo;
+	buttonThree.innerText = choiceThree;
+	buttonFour.innerText = choiceFour;
+}
+
+let questionText = questions.question1.question;
+let choiceOne = questions.question1.choices[0];
+let choiceTwo = questions.question1.choices[1];
+let choiceThree = questions.question1.choices[2];
+let choiceFour = questions.question1.choices[3];
+let questionScore = 0;
+let currentQuestion = 1;
+
+buttonOne.addEventListener('click', correctAnswer);
+buttonTwo.addEventListener('click', correctAnswer);
+buttonThree.addEventListener('click', correctAnswer);
+buttonFour.addEventListener('click', correctAnswer);
+
+showCurrentQuestion();
+answerText(choiceOne, choiceTwo, choiceThree, choiceFour);
+
+// let questionText = questions.question1.question;
+
 function nextQuestion(e) {
 	currentQuestion++;
 	let nextQuestion;
@@ -113,34 +157,3 @@ function nextQuestion(e) {
 	buttonThree.innerText = nextQuestion.choices[2];
 	buttonFour.innerText = nextQuestion.choices[3];
 }
-
-function showCurrentQuestion() {
-	askedQuestion.innerHTML = `<h1>${questionText}</h1>`;
-}
-
-function answerText(choiceOne, choiceTwo, choiceThree, choiceFour) {
-	buttonOne.innerText = choiceOne;
-	buttonTwo.innerText = choiceTwo;
-	buttonThree.innerText = choiceThree;
-	buttonFour.innerText = choiceFour;
-}
-
-function selectedAnswer(e) {}
-
-let questionText = questions.question1.question;
-let choiceOne = questions.question1.choices[0];
-let choiceTwo = questions.question1.choices[1];
-let choiceThree = questions.question1.choices[2];
-let choiceFour = questions.question1.choices[3];
-let score = 0;
-let currentQuestion = 1;
-
-buttonOne.addEventListener('click', correctAnswer);
-buttonTwo.addEventListener('click', correctAnswer);
-buttonThree.addEventListener('click', correctAnswer);
-buttonFour.addEventListener('click', correctAnswer);
-
-showCurrentQuestion();
-answerText(choiceOne, choiceTwo, choiceThree, choiceFour);
-
-// let questionText = questions.question1.question;
