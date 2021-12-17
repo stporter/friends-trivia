@@ -25,6 +25,7 @@ h1 {
 	margin-top: 2%;
 	background-color: yellow;
 	cursor: pointer;
+	font-size: 20px;
 }
 
 .btn:hover {
@@ -44,19 +45,6 @@ h1 {
 	width: 1000px;
 	height: 700px;
 }
-
-/* #next-button {
-	padding: 20px;
-	position: relative;
-	width: 50%;
-}
-
-#restart-button {
-	padding: 20px;
-	position: relative;
-	width: 50%;
-	left: 52%;
-} */
 
 #next-button:hover,
 #restart-button:hover {
@@ -82,4 +70,18 @@ h1 {
 	padding: 20px;
 	border-radius: 8px;
 	background-color: yellow;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.btn.correctanswer {
+	background-color: green;
+}
+
+.btn.incorrectanswer {
+	background-color: red;
+}
+
+#score {
+	position: relative;
 }
