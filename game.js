@@ -85,12 +85,12 @@ const questions = {
 };
 
 const correctAnswer = [
-	'btn3',
+	'btn1',
+	'btn2',
 	'btn2',
 	'btn4',
-	'btn4',
-	'btn2',
 	'btn3',
+	'btn4',
 	'btn3',
 	'btn4',
 	'btn1',
@@ -114,6 +114,11 @@ const correctAnswer = [
 // 	buttonFour.innerText = nextQuestion.choices[3];
 // }
 
+buttonOne.addEventListener('click', checkCorrectAnswer);
+buttonTwo.addEventListener('click', checkCorrectAnswer);
+buttonThree.addEventListener('click', checkCorrectAnswer);
+buttonFour.addEventListener('click', checkCorrectAnswer);
+
 function showCurrentQuestion() {
 	askedQuestion.innerHTML = `<h1>${questionText}</h1>`;
 }
@@ -132,28 +137,49 @@ let choiceThree = questions.question1.choices[2];
 let choiceFour = questions.question1.choices[3];
 let questionScore = 0;
 let currentQuestion = 1;
-
-buttonOne.addEventListener('click', correctAnswer);
-buttonTwo.addEventListener('click', correctAnswer);
-buttonThree.addEventListener('click', correctAnswer);
-buttonFour.addEventListener('click', correctAnswer);
+correctQuestionCounter = 0;
+let score;
 
 showCurrentQuestion();
 answerText(choiceOne, choiceTwo, choiceThree, choiceFour);
 
 // let questionText = questions.question1.question;
 
-function nextQuestion(e) {
+function generateNextQuestion(e) {
+	// if (i < questions.length - 1) {
+	// 	i++;
+	// }
 	currentQuestion++;
 	let nextQuestion;
-	nextQuestion = questions[`question${showCurrentQuestion}`];
+	nextQuestion = questions[`question${currentQuestion}`];
 
-	for (let i = 0; i < answers.length; i++) {
-		answers[i];
+	for (let i = 0; i < correctAnswer.length; i++) {
+		correctAnswer[i];
+
+		askedQuestion.innerHTML = `${nextQuestion.question}?`;
+		buttonOne.innerText = nextQuestion.choices[0];
+		buttonTwo.innerText = nextQuestion.choices[1];
+		buttonThree.innerText = nextQuestion.choices[2];
+		buttonFour.innerText = nextQuestion.choices[3];
 	}
-	askedQuestion.innerText = `${nextQuestion.question}?`;
-	buttonOne.innerText = nextQuestion.choices[0];
-	buttonTwo.innerText = nextQuestion.choices[1];
-	buttonThree.innerText = nextQuestion.choices[2];
-	buttonFour.innerText = nextQuestion.choices[3];
+}
+
+// function checkCorrectAnswer(e) {
+// 	let selectedAnswer;
+// 	if (selectedAnswer === correctAnswer[currentQuestion - 1]) {
+// 		correctQuestionCounter += 1;
+// 	}
+// 	generateNextQuestion();
+// }
+function checkCorrectAnswer(e) {
+	let selectedAnswer = this.id;
+	if (selectedAnswer === correctAnswer[currentQuestion - 1]) {
+		questionScore += 1;
+	}
+	function generateUserScore() {
+		score = questionScore * 10;
+		scoreText.innerHTML = `<h4>Score: ${score} points</h4>`;
+	}
+	generateUserScore();
+	generateNextQuestion();
 }

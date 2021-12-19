@@ -23,3 +23,5 @@ creating button in JS - https://sebhastian.com/javascript-create-button/
 spread operator [...""] - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
 how to make a button grid in css - https://www.w3schools.com/css/css_grid.asp / https://developer.mozilla.org/en-US/docs/Web/CSS/gap
+
+selecting correct answer - https://developer.mozilla.org/en-US/docs/Web/API/Event/target
