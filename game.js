@@ -33,53 +33,55 @@ const buttonFour = document.querySelector('#btn4');
 
 const questions = {
 	question1: {
-		question: 'Who pees on Monica after she is stung by a jellyfish?',
+		question:
+			'Question 1: Who pees on Monica after she is stung by a jellyfish?',
 		choices: ['Ross', 'Rachel', 'Chandler', 'Joey'],
 	},
 	question2: {
-		question: 'What is the name of Joeys stuffed penguin?',
+		question: 'Question 2: What is the name of Joeys stuffed penguin?',
 		choices: ['Cuddles', 'Hugsy', 'Fuzzy', 'Snuggles'],
 	},
 	question3: {
-		question: 'How many sisters does Joey have?',
+		question: 'Question 3: How many sisters does Joey have?',
 		choices: ['four', 'two', 'none', 'seven'],
 	},
 	question4: {
-		question: 'What is Chandler Bings middle name?',
+		question: 'Question 4: What is Chandler Bings middle name?',
 		choices: ['Rose', 'Michael', 'Mary', 'Murial'],
 	},
 	question5: {
-		question: 'Phoebe attempts to teach Joey what language?',
+		question: 'Question 5: Phoebe attempts to teach Joey what language?',
 		choices: ['Spanish', 'French', 'Arabic', 'Russian'],
 	},
 	question6: {
-		question: 'Which character famously said, "PIVOT"?',
+		question: 'Question 6: Which character famously said, "PIVOT"?',
 		choices: ['Joey', 'Chandler', 'Ross', 'Gunther'],
 	},
 	question7: {
-		question: 'What holiday does Chandler hate?',
+		question: 'Question 7: What holiday does Chandler hate?',
 		choices: ['Halloween', 'Christmas', 'Thanksgiving', 'Easter'],
 	},
 	question8: {
-		question: 'Monica could not tell time until what age?',
+		question: 'Question 8: Monica could not tell time until what age?',
 		choices: ['seven', 'ten', 'eight', 'thirteen'],
 	},
 	question9: {
 		question:
-			'Chandler told Janice he was moving where to avoid seeing her again?',
+			'Question 9: Chandler told Janice he was moving where to avoid seeing her again?',
 		choices: ['Yemen', 'Ethiopia', 'Somalia', 'Egypt'],
 	},
 	question10: {
 		question:
-			'Which one of Monicas boyfriends wanted to become the Ultimate Fighting Champion?',
+			'Question 10: Which one of Monicas boyfriends wanted to become the Ultimate Fighting Champion?',
 		choices: ['Paul', 'Richard', 'Pete', 'Julio'],
 	},
 	question11: {
-		question: 'Monica and Chandler first got together where?',
+		question: 'Question 11: Monica and Chandler first got together where?',
 		choices: ['New York', 'London', 'Paris', 'Las Vegas'],
 	},
 	question12: {
-		question: 'What food caused Ross to get sick on Space Mountain?',
+		question:
+			'Question 12: What food caused Ross to get sick on Space Mountain?',
 		choices: ['Tacos', 'Pizza', 'Hot Dogs', 'Seafood'],
 	},
 };
@@ -87,10 +89,10 @@ const questions = {
 const correctAnswer = [
 	'btn1',
 	'btn2',
+	'btn4',
+	'btn4',
 	'btn2',
-	'btn4',
 	'btn3',
-	'btn4',
 	'btn3',
 	'btn4',
 	'btn1',
@@ -135,10 +137,10 @@ let choiceOne = questions.question1.choices[0];
 let choiceTwo = questions.question1.choices[1];
 let choiceThree = questions.question1.choices[2];
 let choiceFour = questions.question1.choices[3];
-let questionScore = 0;
+let questionScore = 1;
 let currentQuestion = 1;
 correctQuestionCounter = 0;
-let score;
+let score = 0;
 
 showCurrentQuestion();
 answerText(choiceOne, choiceTwo, choiceThree, choiceFour);
@@ -156,7 +158,7 @@ function generateNextQuestion(e) {
 	for (let i = 0; i < correctAnswer.length; i++) {
 		correctAnswer[i];
 
-		askedQuestion.innerHTML = `${nextQuestion.question}?`;
+		askedQuestion.innerHTML = `${nextQuestion.question}`;
 		buttonOne.innerText = nextQuestion.choices[0];
 		buttonTwo.innerText = nextQuestion.choices[1];
 		buttonThree.innerText = nextQuestion.choices[2];
@@ -177,7 +179,7 @@ function checkCorrectAnswer(e) {
 		questionScore += 1;
 	}
 	function generateUserScore() {
-		score = questionScore * 10;
+		score = questionScore * 1;
 		scoreText.innerHTML = `<h4>Score: ${score} points</h4>`;
 	}
 	generateUserScore();
