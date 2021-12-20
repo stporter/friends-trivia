@@ -43,10 +43,10 @@ h1 {
 	border-radius: 8px;
 	padding: 50px;
 	width: 1000px;
-	height: 700px;
+	height: 800px;
 }
 
-#next-button:hover,
+/* #next-button:hover, */
 #restart-button:hover {
 	transition: transform 200ms;
 	transform: scale(1.1);
@@ -55,8 +55,8 @@ h1 {
 .main-buttons {
 	padding: 20px;
 	display: flex;
-	justify-content: center;
-	text-align: center;
+	justify-content: right;
+	text-align: right;
 	flex-direction: row;
 	gap: 50%;
 	border-radius: 8px;
@@ -65,7 +65,7 @@ h1 {
 	top: 60px;
 }
 
-#next-button,
+/* #next-button, */
 #restart-button {
 	padding: 20px;
 	border-radius: 8px;

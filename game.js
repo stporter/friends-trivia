@@ -34,54 +34,55 @@ const buttonFour = document.querySelector('#btn4');
 const questions = {
 	question1: {
 		question:
-			'Question 1: Who pees on Monica after she is stung by a jellyfish?',
+			'Question 1 of 12: Who pees on Monica after she is stung by a jellyfish?',
 		choices: ['Ross', 'Rachel', 'Chandler', 'Joey'],
 	},
 	question2: {
-		question: 'Question 2: What is the name of Joeys stuffed penguin?',
+		question: 'Question 2 of 12: What is the name of Joeys stuffed penguin?',
 		choices: ['Cuddles', 'Hugsy', 'Fuzzy', 'Snuggles'],
 	},
 	question3: {
-		question: 'Question 3: How many sisters does Joey have?',
+		question: 'Question 3 of 12: How many sisters does Joey have?',
 		choices: ['four', 'two', 'none', 'seven'],
 	},
 	question4: {
-		question: 'Question 4: What is Chandler Bings middle name?',
+		question: 'Question 4 of 12: What is Chandler Bings middle name?',
 		choices: ['Rose', 'Michael', 'Mary', 'Murial'],
 	},
 	question5: {
-		question: 'Question 5: Phoebe attempts to teach Joey what language?',
+		question: 'Question 5 of 12: Phoebe attempts to teach Joey what language?',
 		choices: ['Spanish', 'French', 'Arabic', 'Russian'],
 	},
 	question6: {
-		question: 'Question 6: Which character famously said, "PIVOT"?',
+		question: 'Question 6 of 12: Which character famously said, "PIVOT"?',
 		choices: ['Joey', 'Chandler', 'Ross', 'Gunther'],
 	},
 	question7: {
-		question: 'Question 7: What holiday does Chandler hate?',
+		question: 'Question 7 of 12: What holiday does Chandler hate?',
 		choices: ['Halloween', 'Christmas', 'Thanksgiving', 'Easter'],
 	},
 	question8: {
-		question: 'Question 8: Monica could not tell time until what age?',
+		question: 'Question 8 of 12: Monica could not tell time until what age?',
 		choices: ['seven', 'ten', 'eight', 'thirteen'],
 	},
 	question9: {
 		question:
-			'Question 9: Chandler told Janice he was moving where to avoid seeing her again?',
+			'Question 9 of 12: Chandler told Janice he was moving where to avoid seeing her again?',
 		choices: ['Yemen', 'Ethiopia', 'Somalia', 'Egypt'],
 	},
 	question10: {
 		question:
-			'Question 10: Which one of Monicas boyfriends wanted to become the Ultimate Fighting Champion?',
+			'Question 10 of 12: Which one of Monicas boyfriends wanted to become the Ultimate Fighting Champion?',
 		choices: ['Paul', 'Richard', 'Pete', 'Julio'],
 	},
 	question11: {
-		question: 'Question 11: Monica and Chandler first got together where?',
+		question:
+			'Question 11 of 12: Monica and Chandler first got together where?',
 		choices: ['New York', 'London', 'Paris', 'Las Vegas'],
 	},
 	question12: {
 		question:
-			'Question 12: What food caused Ross to get sick on Space Mountain?',
+			'Question 12 of 12: What food caused Ross to get sick on Space Mountain?',
 		choices: ['Tacos', 'Pizza', 'Hot Dogs', 'Seafood'],
 	},
 };
